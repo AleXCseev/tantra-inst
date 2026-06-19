@@ -81,6 +81,7 @@ var landingFunctions = {
   nav: function () {
     $(".nav__trigger").click(function (e) {
       // e.stopPropagation();
+      $("body").css("overflow", "auto")
       $(".modal").hide();
       if ($(this).hasClass("active")) return;
 
